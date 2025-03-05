@@ -47,6 +47,7 @@ useFocusEffect(
   };
 const handleLogoutAndOpenAuthSheet = () => {
     logout();
+    setCustomer(null)
     handleOpenSheet();
   };
 
@@ -90,7 +91,7 @@ const handleLogoutAndOpenAuthSheet = () => {
   if (!isLoggedIn || !customer ) {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Profile {isLoggedIn?"true":"false"} {customer?JSON.stringify(customer, null,4):"customer ni mila"}</Text>
+        {/* <Text style={styles.title}>Profile {isLoggedIn?"true":"false"} {customer?JSON.stringify(customer, null,4):"customer ni mila"}</Text> */}
         <AuthSheet ref={authSheetRef} />
       </View>
     );
