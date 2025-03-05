@@ -126,7 +126,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
           <TouchableOpacity onPress={handleNavigation(productId)}>
             <Text style={{ fontWeight: "bold", fontSize: 16 }}>{productName}</Text>
           </TouchableOpacity>
-          <Text style={{ fontSize: 14, color: "gray" }}>Price: ${price}</Text>
+          <Text style={{ fontSize: 14, color: "gray" }}>Price: Rs. {price}</Text>
           <Text>Quantity: {quantity}</Text>
   
           {/* Status Badges */}
